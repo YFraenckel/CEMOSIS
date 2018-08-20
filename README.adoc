@@ -26,7 +26,8 @@ _A ajouter_
 
 ==== Modèle
 
-On considère donc un modèle en deux dimensions d'un flux laminaire incompressible dans un tyau autour d'un obstacle. Le domaine du courant, appelé stem:[\Omega_f] est contenu dans le rectangle stem:[ \lbrack 0,2.5 \rbrack \times \lbrack 0,0.41 \rbrack ]. Ce fluide possède une viscosité stem:[\mu_f] et une densité stem:[\rho_f]. Dans notre cas, le liquide utilisé sera l'eau et ces deux valeurs seront égales à 1.
+On considère donc un modèle en deux dimensions d'un flux laminaire incompressible dans un tyau autour d'un obstacle. Le domaine du courant, appelé stem:[\Omega_f] est contenu dans le rectangle stem:[ \lbrack 0,2.5 \rbrack \times \lbrack 0,0.41 \rbrack ]. Ce fluide possède une viscosité stem:[\mu_f] et une densité stem:[\rho_f]. Dans notre cas, le liquide utilisé sera l'eau.
+
 
 .Géometrie du benchmark de Turek 
 image::http://www.featflow.de/media/dfg_bench1_2d/geometry.png[alt="TurekHron Geometry",align="center"]
@@ -58,8 +59,25 @@ Nous utiliserons une vitesse parabolique le long du bord d'entrée (stem:[\Gamma
 
 où stem:[\bar{U}] est le moyenne de la vitesse.
 
+==== CFD1
 
+En CFD1, stem:[{U}]=0.3, la vitesse moyenne parabolique sera donc de  
 
+stem:[\bar{U} = \frac{2}{3} \bar{U} = 0.2 ]
+
+La longueur caractéristique du fluide stem:[ L = 2* 0.05 = 0.1 ].
+
+Le nombre de Reynolds vaudra donc :
+
+stem:[ Re = \frac{\bar{U}L}{\mu} = \frac{0.2*0.1}{0.001} = 20].
+
+Pour ce nombre de Reynolds, le fluide aura un comportement stationaire. On voit ci dessous la température et la pression : 
+
+.Pression du fluide 
+image::http://www.featflow.de/media/dfg_bench1_2d/geometry.png[alt="TurekHron Geometry",align="center"]
+
+.Vélocité du fluide 
+image::http://www.featflow.de/media/dfg_bench1_2d/geometry.png[alt="TurekHron Geometry",align="center"]
 
 
 == Bibliographie
