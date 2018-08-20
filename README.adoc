@@ -14,22 +14,46 @@ CEMOSIS a entre autres développé le logiciel Fell++, qui est une librairie C++
 
 === Problématique 
 
-Pour l'évolution de Fell++, il a été décidé d'implémenter différents benchmarks afin de montrer les capacités du logiciel dans la modélisation et la simulation. Il m'a été demandé de faire ce benchmark dans le domaine de la mécanique des fluides et plus particulièrement sur l'écoulement de fluides dans un tuyau possédant un obstacle. Le but est donc de réaliser le benchmark prposé par <<Turek>>, qui consiste à observer le comportement des forces de portance et de trainées, et ce dans différents cas de figures (vitesse du fluide, 2D ou 3D).
+Pour l'évolution de Fell++, il a été décidé d'implémenter différents benchmarks afin de montrer les capacités du logiciel dans la modélisation et la simulation. Il m'a été demandé de faire ce benchmark dans le domaine de la mécanique des fluides et plus particulièrement sur l'écoulement de fluides dans un tuyau possédant un obstacle. Le but est donc de réaliser le benchmark proposé par <<Turek>>, qui consiste à observer le comportement des forces de portance et de trainées, et ce dans différents cas de figures (vitesse du fluide, 2D ou 3D).
 
 == Description du problème
 
 === Cas 2D 
 
-On considère donc un modèle en deux dimensions d'un flux laminaire incompressible dans un tyau autour d'un obstacle. Le domaine du courant, appelé stem:[\Omega_f] est contenu dans le rectangle stem:[ \lbrack 0,2.5 \rbrack \times \lbrack 0,0.41 \rbrack ]. Ce fluide possède une viscosité stem:[\mu_f] et une densité stem:[\rho_f].
+==== Modèle
+
+On considère donc un modèle en deux dimensions d'un flux laminaire incompressible dans un tyau autour d'un obstacle. Le domaine du courant, appelé stem:[\Omega_f] est contenu dans le rectangle stem:[ \lbrack 0,2.5 \rbrack \times \lbrack 0,0.41 \rbrack ]. Ce fluide possède une viscosité stem:[\mu_f] et une densité stem:[\rho_f]. Dans notre cas, le liquide utilisé sera l'eau et ces deux valeurs seront égales à 1.
 
 .Géometrie du benchmark de Turek 
 image::http://www.featflow.de/media/dfg_bench1_2d/geometry.png[alt="TurekHron Geometry",align="center"]
 
+
 Pour décrire ce fluide, nous avons choisi le modèle incompresssible de Navier-Stokes, défini par les équations de conservation de l'énergie et de conservation de masse.
 
+==== Conditions aux bords 
 
+On pose : 
 
+* sur stem:[\Gamma_{in}], une condition de Dirichelt :
+ stem:[ \boldsymbol{u}_f=(v_{in},0) ]
 
+* sur stem:[\Gamma_{wall}] and stem:[\Gamma_{obst}], une condition de Dirichlet homogène :
+stem:[ \boldsymbol{u}_f=\boldsymbol{0} ]
+
+* sur stem:[\Gamma_{out}], une condition de Neumann :
+stem:[ \boldsymbol{\sigma}_f\boldsymbol{ n }_f=\boldsymbol{0} ]
+
+==== Conditions initiales
+
+Nous utiliserons une vitesse parabolique le long du bord d'entrée (stem:[\Gamma_{in}]), qui peut être exprimée par 
+
+[stem]
+++++
+  v_{cst} = 1.5 \bar{U} \frac{4}{0.1681} y \left(0.41-y\right)
+++++
+ où stem:[\bar{U}] est le moyenne de la vitesse.
+
+==== CFD1
 
 
 
