@@ -1,0 +1,42 @@
+= BENCHMARK TUREK
+
+== Introduction
+
+=== Contexte
+
+le 21ème siècle est celui de l'avènement de la technologie informatique. La puissance de calcul et la facilité de transport des données ont fait de cette technologie un outil utilisé dans toutes les facettes de la vie. En particulier, de nombreuses industries y ont maintenant recours afin d'améliorer leurs produits. AInsi, de nombreux problèmes relevant de la pysique, et pouvant donc être posés sous formes d'équations mathématiques, qui ne peuvent être résoud "à la main" peuvent maintenant être résolu. C'est le cas d'une partie des problèmes de mécanique des fluides, régis par les fameuses équations de Navier-Stokes.
+
+=== Présentation de l'entreprise
+
+Le Centre de Modélisation et de Simulation de Strasbourg (CEMOSIS) a été fondé en en Janvier 2013 et est situé dans les locaux de l'Institut pour la Recherche en Mathématiques Avancés (IRMA) de l'Université de Strasbourg. Ses objectifs sont d'accroitre la visibilité de la modélisation, de fédérer les efforts en modélisation et simulation autour de Strasbourg, de favoriser les projets interdisciplinaires dans ces disciplines, ainsi que de développer les outils nécessaires à cela. 
+
+CEMOSIS a entre autres développé le logiciel Fell++, qui est une librairie C++ pour la résolution d'équations aux dérivés partielles.      
+
+=== Problématique 
+
+Pour l'évolution de Fell++, il a été décidé d'implémenter différents benchmarks afin de montrer les capacités du logiciel dans la modélisation et la simulation. Il m'a été demandé de faire ce benchmark dans le domaine de la mécanique des fluides et plus particulièrement sur l'écoulement de fluides dans un tuyau possédant un obstacle. Le but est donc de réaliser le benchmark prposé par <<Turek>>, qui consiste à observer le comportement des forces de portance et de trainées, et ce dans différents cas de figures (vitesse du fluide, 2D ou 3D).
+
+== Description du problème
+
+=== Cas 2D 
+
+On considère donc un modèle en deux dimensions d'un flux laminaire incompressible dans un tyau autour d'un obstacle. Le domaine du courant, appelé stem:[\Omega_f] est contenu dans le rectangle stem:[ \lbrack 0,2.5 \rbrack \times \lbrack 0,0.41 \rbrack ]. Ce fluide possède une viscosité stem:[\mu_f] et une densité stem:[\rho_f].
+
+.Géometrie du benchmark de Turek 
+image::http://www.featflow.de/media/dfg_bench1_2d/geometry.png[alt="TurekHron Geometry",align="center"]
+
+Pour décrire ce fluide, nous avons choisi le modèle incompresssible de Navier-Stokes, défini par les équations de conservation de l'énergie et de conservation de masse.
+
+
+
+
+
+
+
+
+
+== Bibliography
+
+[bibliography]
+.References for this benchmark
+- [[[Turek]]] S. Turek and M. Schäfer , _Recent benchmark computation of laminar flow around a cylinder_, Institut fur Angewandte Mathematik, Universitat Heidelberg, ?.
