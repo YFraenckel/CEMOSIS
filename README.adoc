@@ -118,10 +118,10 @@ stem:[ Re = \frac{\bar{U}L}{\mu} = \frac{0.2*0.1}{0.001} = 100].
 Pour ce nombre de Reynolds, le fluide aura un comportement stationaire. On voit ci dessous la température et la pression : 
 
 .Pression du fluide en CFD2
-image::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd1_pressure.png[alt="TurekHron Geometry",align="center"]
+image::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd2_pressure.png[alt="TurekHron Geometry",align="center"]
 
 .Vélocité du fluide CFD2
-image::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd1_velocity.png[alt="TurekHron Geometry",align="center"]
+image::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd2_velocity.png[alt="TurekHron Geometry",align="center"]
 
 
 Nous avons comme résultats :
