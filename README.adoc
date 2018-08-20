@@ -51,7 +51,8 @@ Nous utiliserons une vitesse parabolique le long du bord d'entrée (stem:[\Gamma
 ++++
   v_{cst} = 1.5 \bar{U} \frac{4}{0.1681} y \left(0.41-y\right)
 ++++
- où stem:[\bar{U}] est le moyenne de la vitesse.
+
+où stem:[\bar{U}] est le moyenne de la vitesse.
 
 ==== CFD1
 
@@ -59,7 +60,7 @@ Nous utiliserons une vitesse parabolique le long du bord d'entrée (stem:[\Gamma
 
 
 
-== Bibliography
+== Bibliographie
 
 [bibliography]
 .References for this benchmark
