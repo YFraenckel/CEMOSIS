@@ -16,6 +16,10 @@ CEMOSIS a entre autres développé le logiciel Fell++, qui est une librairie C++
 
 Pour l'évolution de Fell++, il a été décidé d'implémenter différents benchmarks afin de montrer les capacités du logiciel dans la modélisation et la simulation. Il m'a été demandé de faire ce benchmark dans le domaine de la mécanique des fluides et plus particulièrement sur l'écoulement de fluides dans un tuyau possédant un obstacle. Le but est donc de réaliser le benchmark proposé par <<Turek>>, qui consiste à observer le comportement des forces de portance et de trainées, et ce dans différents cas de figures (vitesse du fluide, 2D ou 3D).
 
+== Mathématiques du benchmark
+
+_A ajouter_
+
 == Description du problème
 
 === Cas 2D 
@@ -54,8 +58,6 @@ Nous utiliserons une vitesse parabolique le long du bord d'entrée (stem:[\Gamma
 
 où stem:[\bar{U}] est le moyenne de la vitesse.
 
-==== CFD1
-
 
 
 
@@ -63,5 +65,5 @@ où stem:[\bar{U}] est le moyenne de la vitesse.
 == Bibliographie
 
 [bibliography]
-.References for this benchmark
+.Références 
 - [[[Turek]]] S. Turek and M. Schäfer , _Recent benchmark computation of laminar flow around a cylinder_, Institut fur Angewandte Mathematik, Universitat Heidelberg, ?.
