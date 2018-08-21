@@ -266,12 +266,14 @@ Le résultat de l'animation de visualition de la vitesse et de la pression du fl
 video::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd3_2_velocity[width=640, start=7, end=30, options=autoplay]
 
 
-++
++
++
 
 .Vélocité du fluide en CFD3 
 video::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd3_2_pressure[width=640, start=1, end=23, options=autoplay]
 
-++
++
++
 
 
 Nous voyons tout de suite l'effet périodique qu'entraîne l'augmentation du nombre de Reynolds, sans pour autant atteindre un comportement turbulent. 
