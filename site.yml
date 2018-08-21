@@ -4,10 +4,9 @@ content:
   sources:
   - url: ./
     branches: [master,example*,fix*]
-    start_path: examples
+    start_path: ROOT
   - url: ./
-    branches: [develop,master]
-    start_path: contribute
+
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
