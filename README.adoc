@@ -57,6 +57,11 @@ stem:[ a \left( u, v \right ) = \int_{\Omega} \left (\overrightarrow{C} \cdot \n
 
 stem:[ l \left ( v \right ) = \int_{\Omega} f v d V - \int_{\partial \Omega_{N}} g_{N} v ds - \int_{\partial \Omega_{R}} K u_{R} v ds ].
 
+Nous pouvons donc appliquer nos théorèmes (Lax-Milgram) et ainsi résoudre notre problème.
+
+Notes : à compléter 
+
+
 == Description du problème
 
 === Cas 2D 
@@ -261,12 +266,12 @@ Le résultat de l'animation de visualition de la vitesse et de la pression du fl
 video::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd3_2_velocity[width=640, start=7, end=30, options=autoplay]
 
 
-
+++
 
 .Vélocité du fluide en CFD3 
 video::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd3_2_pressure[width=640, start=1, end=23, options=autoplay]
 
-
+++
 
 
 Nous voyons tout de suite l'effet périodique qu'entraîne l'augmentation du nombre de Reynolds, sans pour autant atteindre un comportement turbulent. 
