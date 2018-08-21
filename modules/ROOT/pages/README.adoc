@@ -282,7 +282,7 @@ La force de trainée vaut en moyenne 510 et la force de portance vaut en moyenne
 image::https://github.com/YFraenckel/CEMOSIS/blob/master/portance.JPG[alt="TurekHron Geometry",align="center"]
 
 
-.Portance en CFD3
+.Zoom sur la portance 
 image::https://github.com/YFraenckel/CEMOSIS/blob/master/portance2.JPG[alt="TurekHron Geometry",align="center"]
 
 
@@ -290,7 +290,7 @@ image::https://github.com/YFraenckel/CEMOSIS/blob/master/portance2.JPG[alt="Ture
 image::https://github.com/YFraenckel/CEMOSIS/blob/master/train%C3%A9e.JPG[alt="TurekHron Geometry",align="center"]
 
 
-.Trainée en CFD3
+.Zoom sur la trainée 
 image::https://github.com/YFraenckel/CEMOSIS/blob/master/train%C3%A9e2.JPG[alt="TurekHron Geometry",align="center"]
 
 
