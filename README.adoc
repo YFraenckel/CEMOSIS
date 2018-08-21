@@ -18,7 +18,44 @@ Pour l'évolution de Fell++, il a été décidé d'implémenter différents benc
 
 == Mathématiques du benchmark
 
-_A ajouter_
+Nous travaillons avec les équations de Navier-Stokes incompressibles, c'est à dire :
+
+[stem]
+++++
+  \left\{
+  \begin{aligned}
+   &  \frac{\partial u }{\partial t} + u - \nabla u  - \nu \Delta u + \nabla p = f \quad & \text{ sur } \Omega \\
+   & \nabla \cdot u = 0  \quad & \text{ sur } \Gamma_{\Omega}
+  \end{aligned}
+  \right.
+++++
+
+Ce qui nous donne la formulation variationnelle :
+
+[stem]
+++++
+  \left\{
+  \begin{aligned}
+   &  \overrightarrow{C} \cdot \nabla u - \nabla \cdot  \left( a \nabla u \right ) = f \quad & \text{ sur } \Omega \\
+   & -a \nabla u \cdot \overrightarrow{n} = g_{N}   \quad & \text{ sur } \partial \Omega{N}
+   & - u  = g_{D}   \quad & \text{ sur } \partial \Omega{D}
+   & -a \nabla u \cdot \overrightarrow{n} = g_{R}   \quad & \text{ sur } \partial \Omega{R}
+  \end{aligned}
+  \right.
+++++
+
+On a :
+
+stem:[ u \in X_{g_{D}}] où X_{g_{D}} = \left\{ v \in H \up 1 (\left \Omega \right ) \| v = \restr g_{D} \omega_{D} \right ]. 
+
+stem:[ v \in X_{0}] une fonction test et on applique la méthode Galerkin Riesz standard. 
+
+En appliquant le reste de la méthodologie classique on arrive donc à : 
+
+stem:[ a \left( u, v \right ) = \int_{\Omega} \left (\overrightarrow{C} \cdot \nabla u \right ) v + a \nabla u - \nabla v - \int_{\partial \Omega_{R}} K u v ]
+
+
+stem:[ l \left ( v \right ) = \int_{\Omega} f v d V - \int_{\partial \Omega_{N}} g_{N} v ds - \int_{\partial \Omega_{R}} K u_{R} v ds ].
 
 == Description du problème
 
