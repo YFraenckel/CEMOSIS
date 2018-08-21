@@ -120,8 +120,12 @@ Pour ce nombre de Reynolds, le fluide aura un comportement stationaire. On voit 
 .Pression du fluide en CFD2
 image::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd2_pressure.png[alt="TurekHron Geometry",align="center"]
 
+
+
+
 .Vélocité du fluide CFD2
 image::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd2_velocity.png[alt="TurekHron Geometry",align="center"]
+
 
 
 Nous avons comme résultats :
@@ -132,13 +136,13 @@ Nous avons comme résultats :
 .Results for CFD1
 |===
 |stem:[\mathbf{N_{geo}}]|stem:[\mathbf{N_{elt}}] |stem:[\mathbf{N_{dof}}]|Trainée|Portance
-3+^.^|Reference <<Turek>> |5.58|0.0106
-|1|3392|15839 (stem:[P_2/P_1])|5.55|0.0118
-|1|28890|131705 (stem:[P_2/P_1])|5.55|0.0107
-|1|77268|311340 (stem:[P_2/P_1])|5.55|0.0106
+3+^.^|Reference <<Turek>> |--|--
+|1|3392|15839 (stem:[P_2/P_1])|72.9|0.279
+|1|28890|131705 (stem:[P_2/P_1])|73.4|0.329
+|1|77268|311340 (stem:[P_2/P_1])|73.5|0.0332
 
 == Bibliographie
 
 [bibliography]
 .Références 
-- [[[Turek]]] S. Turek and M. Schäfer , _Recent benchmark computation of laminar flow around a cylinder_, Institut fur Angewandte Mathematik, Universitat Heidelberg, ?.
+- [[[Turek]]] S. Turek and M. Schäfer , _Recent benchmark computation of laminar flow around a cylinder_, Institut fur Angewandte Mathematik, Universitat Heidelberg, 1996.
