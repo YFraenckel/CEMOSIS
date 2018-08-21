@@ -266,19 +266,33 @@ Le résultat de l'animation de visualition de la vitesse et de la pression du fl
 video::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd3_2_velocity[width=640, start=7, end=30, options=autoplay]
 
 
- +
- +
+
 
 .Vélocité du fluide en CFD3 
 video::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd3_2_pressure[width=640, start=1, end=23, options=autoplay]
 
- +
- +
 
 
 Nous voyons tout de suite l'effet périodique qu'entraîne l'augmentation du nombre de Reynolds, sans pour autant atteindre un comportement turbulent. 
 
-La force de trainée vaut en moyenne 612 et la force de portance vaut en moyenne 0 (LibreOffice ne permet pas la précision nécessaire pour avoir un résultat plus fin). 
+La force de trainée vaut en moyenne 510 et la force de portance vaut en moyenne 3.64 (LibreOffice ne permet pas la précision nécessaire pour avoir un résultat plus fin). 
+
+
+.Portance en CFD3
+image::https://github.com/YFraenckel/CEMOSIS/blob/master/portance.JPG[alt="TurekHron Geometry",align="center"]
+
+
+.Portance en CFD3
+image::https://github.com/YFraenckel/CEMOSIS/blob/master/portance2.JPG[alt="TurekHron Geometry",align="center"]
+
+
+.Trainée en CFD3
+image::https://github.com/YFraenckel/CEMOSIS/blob/master/train%C3%A9e.JPG[alt="TurekHron Geometry",align="center"]
+
+
+.Trainée en CFD3
+image::https://github.com/YFraenckel/CEMOSIS/blob/master/train%C3%A9e2.JPG[alt="TurekHron Geometry",align="center"]
+
 
 
 === Cas 3D
