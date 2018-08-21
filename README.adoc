@@ -80,7 +80,23 @@ Le nombre de Reynolds vaudra donc :
 
 stem:[ Re = \frac{\bar{U}L}{\mu} = \frac{0.2*0.1}{0.001} = 20].
 
-Pour ce nombre de Reynolds, le fluide aura un comportement stationaire. On voit ci dessous la température et la pression : 
+Pour ce nombre de Reynolds, le fluide aura un comportement stationaire. 
+
+La commande pour lancer ce cas est :
+
+[[command-line-cfd1]]
+[source,sh]
+----
+mpirun -np 4 feelpp_toolbox_fluid  --case.config-file cfd1.cfg
+----
+
+++++
+<button class="btn" data-clipboard-target="#command-line-cfd1">
+Copy command line to clipboard
+</button>
+++++
+
+On voit ci dessous la température et la pression : 
 
 .Pression du fluide en CFD1 laminaire
 image::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd1_pressure.png[alt="TurekHron Geometry",align="center"]
@@ -115,7 +131,23 @@ Le nombre de Reynolds vaudra donc :
 
 stem:[ Re = \frac{\bar{U}L}{\mu} = \frac{0.2*0.1}{0.001} = 100].
 
-Pour ce nombre de Reynolds, le fluide aura un comportement stationaire. On voit ci dessous la température et la pression : 
+Pour ce nombre de Reynolds, le fluide aura un comportement stationaire. 
+
+La commande pour lancer ce cas est :
+
+[[command-line-cfd2]]
+[source,sh]
+----
+mpirun -np 4 feelpp_toolbox_fluid  --case.config-file cfd2.cfg
+----
+
+++++
+<button class="btn" data-clipboard-target="#command-line-cfd2">
+Copy command line to clipboard
+</button>
+++++
+
+On voit ci dessous la température et la pression : 
 
 .Pression du fluide en CFD2
 image::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd2_pressure.png[alt="TurekHron Geometry",align="center"]
@@ -161,6 +193,20 @@ Le nombre de Reynolds vaudra donc :
 stem:[ Re = \frac{\bar{U}L}{\mu} = \frac{0.2*0.1}{0.001} = 100].
 
 
+La commande pour lancer ce cas :
+
+[[command-line-cfd3]]
+[source,sh]
+----
+mpirun -np 4 feelpp_toolbox_fluid  --case.config-file cfd3.cfg
+----
+
+++++
+<button class="btn" data-clipboard-target="#command-line-cfd3">
+Copy command line to clipboard
+</button>
+++++
+
 Le résultat de l'animation de visualition de la vitesse et de la pression du fluide ne CFD3 est le suivant :
 
 .Vélocité du fluide en CFD3 
@@ -198,8 +244,15 @@ Malheureusement, la commande "feelpp_toolbox_fluid" ne marche pas pour calculer 
 
 
 .Message d'erreur 3D
-image::https://github.com/YFraenckel/CEMOSIS/blob/master/3D_mesh_Turek.png[alt="TurekHron Geometry",align="center"]
+image::https://github.com/YFraenckel/CEMOSIS/blob/master/Capture11.JPG[alt="TurekHron Geometry",align="center"]
 
+
+
+Je ne suis donc pas en mesure de fournir des données pour le benchmark 3D. 
+
+
+
+== Conclusion
 
 == Bibliographie
 
