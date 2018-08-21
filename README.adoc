@@ -105,7 +105,7 @@ Nous avons comme résultats :
 
 ==== CFD2 
 
-En CFD1, stem:[{U}]= 1.5, la vitesse moyenne parabolique sera donc de  
+En CFD2, stem:[{U}]= 1.5, la vitesse moyenne parabolique sera donc de  
 
 stem:[\bar{U} = \frac{2}{3} \bar{U} = 1.0 ]
 
@@ -143,9 +143,34 @@ Nous avons comme résultats :
 
 |===
 
+Le benchmark de Turek considère le CFD2 comme une simulation dépendante du temps, ce qui n'est pas le cas chez nous. Nous n'avons donc pas de résultats de référence. Cependant, les résultats sont en adéquation avec ce qui a été établi dans le benchmark <<TurekHron>>. 
+
+
+
+==== CFD3
+
+
+En CFD2, stem:[{U}]= 1.5, la vitesse moyenne parabolique sera donc de  
+
+stem:[\bar{U} = \frac{2}{3} \bar{U} = 1.0 ]
+
+La longueur caractéristique du fluide stem:[ L = 2* 0.05 = 0.1 ].
+
+Le nombre de Reynolds vaudra donc :
+
+stem:[ Re = \frac{\bar{U}L}{\mu} = \frac{0.2*0.1}{0.001} = 100].
+
+
+Le résultat de l'animation de visualition de la vitesse du fluide ne CFD3 est le suivant :
+
+.Vélocité du fluide en CFD3 
+video::
+
 
 == Bibliographie
 
 [bibliography]
 .Références 
 - [[[Turek]]] S. Turek and M. Schäfer , _Recent benchmark computation of laminar flow around a cylinder_, Institut fur Angewandte Mathematik, Universitat Heidelberg, 1996.
+
+- [[[TurekHron]]] S. Turek and J. Hron, _Proposal for numerical benchmarking of fluid-structure interaction between an elastic object and laminar incompressible flow_, Lecture Notes in Computational Science and Engineering, 2006.
