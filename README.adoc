@@ -141,6 +141,9 @@ Nous avons comme résultats :
 |1|28890|131705 (stem:[P_2/P_1])|73.4|0.329
 |1|77268|311340 (stem:[P_2/P_1])|73.5|0.0332
 
+|===
+
+
 == Bibliographie
 
 [bibliography]
