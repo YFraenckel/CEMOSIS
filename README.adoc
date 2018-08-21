@@ -189,7 +189,7 @@ image::http://www.featflow.de/media/dfg_flow3d/fac_geo_3d.png[alt="TurekHron Geo
 Et le maillage est tel que :
 
 .Maillage pour le benchmark de Turek 3D
-
+image::https://github.com/YFraenckel/CEMOSIS/blob/master/3D_mesh_Turek.png[alt="TurekHron Geometry",align="center"]
 
 == Bibliographie
 
