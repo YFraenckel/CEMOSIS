@@ -173,7 +173,7 @@ video::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd3_2_pressure[width=6
 
 Nous voyons tout de suite l'effet périodique qu'entraîne l'augmentation du nombre de Reynolds, sans pour autant atteindre un comportement turbulent. 
 
-La force de trainée vaut en moyenne 6.12 et la force de portance vaut en moyenne 0 (LibreOffice ne permet pas la précision nécessaire pour avoir un résultat plus fin). 
+La force de trainée vaut en moyenne 612 et la force de portance vaut en moyenne 0 (LibreOffice ne permet pas la précision nécessaire pour avoir un résultat plus fin). 
 
 
 === Cas 3D
@@ -186,10 +186,20 @@ Le cas 3D est sensiblement le même que le cas 2D, les valeurs des variables res
 image::http://www.featflow.de/media/dfg_flow3d/fac_geo_3d.png[alt="TurekHron Geometry",align="center"]
 
 
+
+
 Et le maillage est tel que :
 
 .Maillage pour le benchmark de Turek 3D
 image::https://github.com/YFraenckel/CEMOSIS/blob/master/3D_mesh_Turek.png[alt="TurekHron Geometry",align="center"]
+
+
+Malheureusement, la commande "feelpp_toolbox_fluid" ne marche pas pour calculer le cas 3D. Voici le message d'erreur obtenu :
+
+
+.Message d'erreur 3D
+image::https://github.com/YFraenckel/CEMOSIS/blob/master/3D_mesh_Turek.png[alt="TurekHron Geometry",align="center"]
+
 
 == Bibliographie
 
