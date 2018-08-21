@@ -127,21 +127,27 @@ La commande pour lancer ce cas est :
 mpirun -np 4 feelpp_toolbox_fluid  --case.config-file cfd1.cfg
 ----
 
-++++
-<button class="btn" data-clipboard-target="#command-line-cfd1">
-Copy command line to clipboard
-</button>
-++++
+
 
 On voit ci dessous la température et la pression : 
 
 .Pression du fluide en CFD1 laminaire
 image::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd1_pressure.png[alt="TurekHron Geometry",align="center"]
 
+
+
+
+
 .Vélocité du fluide en CFD1 laminaire
 image::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd1_velocity.png[alt="TurekHron Geometry",align="center"]
 
+
+
+
+
 Nous avons comme résultats :
+
+
 
 
 
@@ -157,6 +163,8 @@ Nous avons comme résultats :
 |===
 
 ==== CFD2 
+
+
 
 En CFD2, stem:[{U}]= 1.5, la vitesse moyenne parabolique sera donc de  
 
@@ -178,16 +186,15 @@ La commande pour lancer ce cas est :
 mpirun -np 4 feelpp_toolbox_fluid  --case.config-file cfd2.cfg
 ----
 
-++++
-<button class="btn" data-clipboard-target="#command-line-cfd2">
-Copy command line to clipboard
-</button>
-++++
 
 On voit ci dessous la température et la pression : 
 
+
+
 .Pression du fluide en CFD2
 image::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd2_pressure.png[alt="TurekHron Geometry",align="center"]
+
+
 
 
 
@@ -197,7 +204,11 @@ image::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd2_velocity.png[alt="
 
 
 
+
+
 Nous avons comme résultats :
+
+
 
 
 
@@ -219,6 +230,8 @@ Le benchmark de Turek considère le CFD2 comme une simulation dépendante du tem
 ==== CFD3
 
 
+
+
 En CFD3, stem:[{U}]= 1.5, la vitesse moyenne parabolique sera donc de  
 
 stem:[\bar{U} = \frac{2}{3} \bar{U} = 1.0 ]
@@ -238,20 +251,22 @@ La commande pour lancer ce cas :
 mpirun -np 4 feelpp_toolbox_fluid  --case.config-file cfd3.cfg
 ----
 
-++++
-<button class="btn" data-clipboard-target="#command-line-cfd3">
-Copy command line to clipboard
-</button>
-++++
+
 
 Le résultat de l'animation de visualition de la vitesse et de la pression du fluide ne CFD3 est le suivant :
+
+
 
 .Vélocité du fluide en CFD3 
 video::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd3_2_velocity[width=640, start=7, end=30, options=autoplay]
 
 
+
+
 .Vélocité du fluide en CFD3 
 video::https://github.com/YFraenckel/CEMOSIS/blob/master/cfd3_2_pressure[width=640, start=1, end=23, options=autoplay]
+
+
 
 
 Nous voyons tout de suite l'effet périodique qu'entraîne l'augmentation du nombre de Reynolds, sans pour autant atteindre un comportement turbulent. 
