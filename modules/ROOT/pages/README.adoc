@@ -30,6 +30,8 @@ Nous travaillons avec les équations de Navier-Stokes incompressibles, c'est à 
   \right.
 ++++
 
+où stem:[\nu ] est la viscosité, stem:[ p ] la pression et stem:[ f ] le champs de force. 
+
 Ce qui nous donne la formulation variationnelle :
 
 [stem]
@@ -56,12 +58,27 @@ stem:[ u = \r{u} + \tilde{g_{D}} \text{ où } \tilde{g_{D}} \text{ est un relèv
 
 stem:[\int_{\Omega} ( \overrightarrow{C} \cdot \nabla u) v + a \nabla u \cdot \nabla v ) dv -  \int_{\part_{\Omega}} (-a \nabla u \cdot \overrightarrow{n}) v ds = \int_{\Omega} fv dv \text{ pour tout } v \in X_{0}]
 
-stem:[ 
+stem:[ \int_{\part{\Omega} ( a \nabla u \cdot \overrightarrow{n} ) v ds = - \int_{\part{\Omega_{D}}} ( a \nabla u \cdot \overrightarrow{n} ) v ds - \int_{\part{\Omega_{N}}} ( a \nabla u \cdot \overrightarrow{n} ) v ds- \int_{\part{\Omega_{R}}} ( a \nabla u \cdot \overrightarrow{n} ) v ds]
 
-En appliquant le reste de la méthodologie classique on arrive donc à : 
+Sur stem:[\part{\Omega_{D}}], stem:[v = 0], donc stem:[\int_{\part{\Omega_{D}}} ( a \nabla u \cdot \overrightarrow{n} ) v ds = 0].
+
+Sur stem:[\part{\Omega_{N}}], stem:[- a \nabla u \cdot \overrightarrow{n} = g_{N}], donc stem:[\int_{\part{\Omega_{N}}} ( a \nabla u \cdot \overrightarrow{n} ) v ds = \int_{\part{\Omega_{N}}} g_{N} v ds].
+
+Sur stem:[\part{\Omega_{R}}], stem:[- a \nabla u \cdot \overrightarrow{n} + K ( u - u_{R}) = 0], donc stem:[\int_{\part{\Omega_{N}}} - ( a \nabla u \cdot \overrightarrow{n} ) v ds = - \int_{\part{\Omega_{N}}} K ( u - u_{R}) v ds].
+
+K et stem:[ g_{N}] sont connus. 
+
+On obtiens donc : 
+
+stem:[\int_{\Omega} ( \overrightarrow{C} \cdot \nabla u) v + a \nabla u \cdot \nabla v ) dv +  \int_{\part_{\Omega_{N}}} g_{N} v ds + \int_{\part{\Omega_{N}}} - K ( u - u_{R}) v ds = \int_{\Omega} fv dv \text{ pour tout } v \in X_{0}]
+
+stem:[\int_{\Omega} ( \overrightarrow{C} \cdot \nabla u) v +a \nabla u \cdot \nabla v ) dv - \int_{\part{\Omega_{N}}} - K u v ds  = \int_{\Omega} fv dv  - \int_{\part_{\Omega_{N}}} g_{N} v ds  \int_{\part{\Omega_{N}}} - K u_{R} v ds  \text{ pour tout } v \in X_{0}].
+
+On obitens donc la forme bilinéaire suivante :
 
 stem:[ a \left( u, v \right ) = \int_{\Omega} \left (\overrightarrow{C} \cdot \nabla u \right ) v + a \nabla u - \nabla v - \int_{\partial \Omega_{R}} K u v ]
 
+ainsi que la forme linéaire :
 
 stem:[ l \left ( v \right ) = \int_{\Omega} f v d V - \int_{\partial \Omega_{N}} g_{N} v ds - \int_{\partial \Omega_{R}} K u_{R} v ds ].
 
