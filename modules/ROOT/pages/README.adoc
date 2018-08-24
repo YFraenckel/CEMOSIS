@@ -85,7 +85,7 @@ stem:[ l \left ( v \right ) = \int_{\Omega} f v d V - \int_{\partial \Omega_{N}}
 
 Nous pouvons donc appliquer nos théorèmes (Lax-Milgram) et ainsi résoudre notre problème.
 
-Notes : à compléter 
+
 
 
 == Description du problème
