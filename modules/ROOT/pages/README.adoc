@@ -46,9 +46,17 @@ Ce qui nous donne la formulation variationnelle :
 
 On a :
 
-stem:[ u \in X_{g_{D}}] où X_{g_{D}} = \left\{ v \in H \up 1 (\left \Omega \right ) \| v = \restr g_{D} \omega_{D} \right ]. 
+stem:[ u \in X_{g_{D}}] où X_{g_{D}} = \left\{ v \in H \up{1} (\left \Omega \right ) \| v = \restr g_{D} \omega_{D} \right ]. 
 
-stem:[ v \in X_{0}] une fonction test et on applique la méthode Galerkin Riesz standard. 
+stem:[ v \in X_{0}] une fonction test et on applique la méthode Galerkin-Riesz standard. 
+
+stem:[ \int_{\Omega} \left(\overrightarrow{C} \cdot \nabla u - \nabla \cdot \left(a \nabla u \right) \right) v = \int_{\Omega} fv  \quad & \text{ pour tout } v \in X]
+
+stem:[ u = \r{u} + \tilde{g_{D}} \text{ où } \tilde{g_{D}} \text{ est un relèvement de } g_{D_{\part{\Omega_{D}}} \text{ et } \tilde{g_{D}} \in X_{g_{D}} \text{ et } \r{u} \in X_{0} ]. 
+
+stem:[\int_{\Omega} ( \overrightarrow{C} \cdot \nabla u) v + a \nabla u \cdot \nabla v ) dv -  \int_{\part_{\Omega}} (-a \nabla u \cdot \overrightarrow{n}) v ds = \int_{\Omega} fv dv \text{ pour tout } v \in X_{0}]
+
+stem:[ 
 
 En appliquant le reste de la méthodologie classique on arrive donc à : 
 
@@ -56,6 +64,7 @@ stem:[ a \left( u, v \right ) = \int_{\Omega} \left (\overrightarrow{C} \cdot \n
 
 
 stem:[ l \left ( v \right ) = \int_{\Omega} f v d V - \int_{\partial \Omega_{N}} g_{N} v ds - \int_{\partial \Omega_{R}} K u_{R} v ds ].
+
 
 Nous pouvons donc appliquer nos théorèmes (Lax-Milgram) et ainsi résoudre notre problème.
 
