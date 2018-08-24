@@ -353,6 +353,9 @@ Je ne suis donc pas en mesure de fournir des données pour le benchmark 3D.
 
 == Conclusion
 
+
+Feel++ est un bon outil pour faire de la modélisation et de la simulation en mécanique des fluides. La puissance de mes outils est à déplorer pour un certain manque de résultats. On remarque cependant que le cas CFD1 et CFD3 correspondent bien aux valeurs du benchmark de Turek.
+
 == Bibliographie
 
 [bibliography]
